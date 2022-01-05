@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>United Airlines - About</title>
+<style>
+body {
+  background-image: url('back.png');
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #005DAA;
+  width: 100%;
+
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: #f1c933;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #f1c933;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+  <a class="active" href="about.html">About</a>
+  <a href="book.html">Flight Booking</a>
+  <a href="https://discord.gg/UGW4aeSe47">Discord</a>
+  <a id="demo" href=""></a>
+</div>
+<div style="padding-left:16px">
+  <h1><center>About</center></h1>
+  <h3><center>This team of people are here to bring realistic flights in PTFS - Roblox!</center></h3>
+</div>
+<script>
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</body>
+</html>
